@@ -1,0 +1,920 @@
+*{margin: 0; padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#f3f3f3;
+}
+
+.conteiner-fluid {
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .conteiner-fluid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header {
+    background-color: #1E2019;
+    padding: 0.8em 0;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+header a img{
+    width: 3.8em;
+}
+
+nav{
+    position: absolute;
+    background-color: #1E2019;
+    padding: 0px 1em 1em;
+    top: 57px;
+    right: 0;
+    display: none;
+}
+
+nav a {
+    display: block;
+    color: #F4F4F4;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    transition: color 0.2s;
+}
+
+nav a:hover{
+    color: #FDD647;
+}
+
+
+#nav-toggle span{
+    background: #F4F4F4;
+    height: 4px;
+    border-radius: 10px;
+    margin: 8px 0;
+    display: block;
+    width: 35px;
+    margin-right: 1em;
+    transform-origin: left;
+    transition: opacity 0.2s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    ;
+}
+
+.cerrar span:nth-of-type(1){
+    transform: rotatez(45deg);
+}
+.cerrar span:nth-of-type(2){
+    opacity: 0;
+}
+.cerrar span:nth-of-type(3){
+    transform: rotatez(-44.5deg);
+}
+
+header + div {
+    background-image: url(img/Fondos-poligons-blancos.jpg);
+    background-size: 200%;
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    padding-top: 3.5em;
+}
+
+header + div .conteiner-fluid {
+    width: 80%;
+    margin-left: 1em;
+    color: #2B4162;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding-top: 1.5em;
+}
+
+header + div .conteiner-fluid p {
+    font-size: 1.17em;
+    margin-top: 0.8em;
+}
+
+header + div .conteiner-fluid p + div {
+    margin-top: 1.5em;
+    width: 50%;
+}
+
+header + div .conteiner-fluid p + div a {
+    background-color: #E73D2F;
+    color: #F4F4F4;
+    padding: 0.6em 1.8em;
+    border-radius: 5px;
+    transition: color, background-color, padding, 0.2s;
+}
+
+header + div .conteiner-fluid p + div a:hover{
+    background-color: #f0ca44;
+    padding: 0.6em 1.95em;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size:2.5em;
+    color: #2B4162; 
+    margin-top: 1.8em;
+}
+
+#programa{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#programa article a {
+    transition: color 0.2s;
+}
+
+#programa article a:hover{
+    color: #f0ca44;
+}
+
+#programa article{
+    color: #2c2c29;
+    margin-top: 2em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+
+#programa article:nth-of-type(4){
+    display: none;
+}
+#programa article:nth-of-type(5){
+    display: none;
+}
+#programa article:nth-of-type(6){
+    display: none;
+}
+#programa article:nth-of-type(9){
+    display: none;
+}
+
+#programa article figcaption {
+    font-weight: 500;
+}
+
+
+#programa article h3 {
+    margin-top: 0.12em;
+    color: #2B4162;
+}
+
+#programa article h6 {
+    line-height: 0.3;
+    margin-top: 1.2em;
+    font-weight: 600;
+}
+
+#programa article div:nth-of-type(1) img {
+    width: 100%;
+}
+
+#programa article div:nth-of-type(1) img:nth-of-type(2){
+    display: none;
+}
+
+#programa article div:nth-of-type(2){
+    padding: 1.2em
+} 
+
+#actividades {
+    width:90%;
+}
+
+#actividades figure:nth-of-type(1){
+    margin-top:5em;
+}
+
+#actividades figure:nth-of-type(1) img:nth-of-type(2) {
+    display: none;
+}
+
+#actividades figure {
+    width: 100%;
+    position: relative;
+    color: #F4F4F4;
+    margin-bottom: 0.15em;
+    cursor: pointer;
+}
+
+#actividades figure img {
+    width: 100%;
+    overflow: hidden;
+    filter: saturate(55%) brightness(0.5);
+}
+
+#actividades figure h3 {
+    position: absolute;
+    position: absolute;
+    z-index: 0;
+    top: 48%;
+    left: 6%;
+    font-size: 1.5em;
+}
+
+#actividades figure p {
+    position: absolute;
+    z-index: 1;
+    top: 63%;
+    width: 79%;
+    left: 7%;
+    font-size: 0.85em;
+}
+
+#actividades + div {
+    margin-top: 4em;
+}
+
+#actividades + div h2 {
+    margin-bottom:1em
+}
+
+#donde{
+    width: 90%;
+}
+
+#donde article h3{
+    display:none;
+}
+
+#donde iframe {
+    width: 100%;
+}
+
+#donde p {
+    color: #2c2c29;
+    font-size:1.3em;
+    margin: 2em 0 2.5em;
+}
+
+#donde div a {
+    background-color: #E73D2F;
+    color: #F4F4F4;
+    padding: 0.6em 1.8em;
+    border-radius: 5px;
+    transition: color, background-color, padding, 0.2s;
+}
+
+#donde div a:hover{
+    background-color: #f0ca44;
+    padding: 0.6em 1.95em;
+    color: white;
+}
+
+#ingresar{
+    width:90%;
+    margin-top: 2.5em;
+}
+
+.form-control {
+    margin: 1em 0;
+}
+
+.form-select {
+    margin: 1em 0;
+}
+
+#ingresar div {
+    margin: 1em 0;
+}
+
+#ingresar article {
+    display:none;
+}
+
+.btn-primary {
+    background-color: #E73D2F;
+    color: #F4F4F4;
+    width: 100%;
+    transition: color, background-color, 0.2s;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #f0ca44;
+    color: white;
+}
+
+footer .conteiner-fluid{
+    width: 85%;
+}
+
+footer{
+    text-align: center;
+    padding: 4em 0;
+    background-color:#1E2019;
+    margin-top: 4em;
+}
+
+
+footer p {
+    padding-top: 2.5em;
+    color: #F4F4F4;
+
+}
+
+footer a {
+    padding:0 0.25em;
+    font-size: 1.5em;
+    color: #F4F4F4;
+    transition: color 0.2s
+}
+
+footer a:hover {
+    color: #FDD647;
+}
+
+@media screen and (min-width: 375px){
+    header + div{
+        height: 450px;
+    }
+
+    #actividades figure h3 {
+        position: absolute;
+        position: absolute;
+        z-index: 0;
+        top: 48%;
+        left: 6%;
+        font-size: 1.8em;
+    }
+    
+    #actividades figure p {
+        position: absolute;
+        z-index: 1;
+        top: 63%;
+        width: 79%;
+        left: 7%;
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    header + div{
+        background-image: url(img/Fondo\ poligonos\ negros.jpg);
+        
+    }
+    
+    header + div .conteiner-fluid {
+        margin-left: 5.5em;
+        color: #F4F4F4;
+        width: 50%;
+    }
+
+    header + div .conteiner-fluid p + div {
+        padding-top: 1em;
+    }
+
+    #programa {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    #programa article  {
+        width: 31%;
+    }
+
+    #programa article:nth-of-type(1)
+    {
+        width:62%
+    }
+    
+    #programa article:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(1)
+    {
+        display:none;
+    }
+
+    #programa article:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2)
+    {
+        display: inline-block;
+    }
+    
+    #programa article:nth-of-type(7){
+        width:62%   
+    }
+    
+    #programa article:nth-of-type(7) div:nth-of-type(1) img:nth-of-type(1)
+    {
+        display:none;
+    }
+
+    #programa article:nth-of-type(7) div:nth-of-type(1) img:nth-of-type(2)
+    {
+        display: inline-block;
+    }
+
+    #programa article:nth-of-type(4){
+        display: block;
+    }
+    #programa article:nth-of-type(5){
+        display: block;
+    }
+    #programa article:nth-of-type(6){
+        display: block;
+    }
+    #programa article:nth-of-type(9){
+        display: block;
+    }
+
+    #actividades {
+        display:grid;
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    #actividades figure{
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    #actividades figure:nth-of-type(1) {
+        grid-row: span 2;
+    }
+
+    #actividades figure:nth-of-type(1) img 
+    {
+        width: 240%;
+    }
+
+    #actividades figure:nth-of-type(1) h3{
+        top: 75%;
+    }
+
+    #actividades figure:nth-of-type(1) p{
+        top: 82%;
+    }
+
+    #actividades figure:nth-of-type(2){
+        margin-top: 5em;
+    }
+
+    #actividades figure:nth-of-type(1){
+        margin-top: 5.5em;
+    }
+    #actividades figure:nth-of-type(2){
+        margin-top: 5.5em;
+    }
+
+    #actividades + div h2{
+        display: none;
+    }
+    
+    #donde article h3{
+        display: inline-block;
+        font-size:2.5em;
+        color: #2B4162; 
+    }
+    
+    #donde{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #donde iframe{
+        width: 55%;
+    }
+    
+    #donde article{
+        width: 35%;
+    }
+
+    form {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .form-control {
+        width: 45%;
+        margin: 1.5em 0;
+    }
+    .form-select {
+        width: 45%;
+        margin: 1.5em 0;
+    }
+    .ingresar div {
+        width: 45%;
+        margin: 1.5em 0;
+    }
+
+    .btn-primary{
+        width: 45%;
+        margin: 1.5em 0
+    }
+
+    footer a {
+        padding:0 0.5em;
+    }
+}
+
+
+@media all and (min-width: 992px){
+
+    
+    header a img {
+        margin-top: 0.5em;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        align-items: center;
+        flex-wrap: wrap;
+        position: static;
+        margin-top: 0.6em;
+        width: 45%;
+    }
+    nav a{
+        display: inline-block;
+        padding: 0em; 
+        transition: color, 0.2s
+    }
+    
+    nav a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #E73D2F;
+        transition: width , 0.2s;
+    }
+    
+    nav a:hover::after{
+        width: 100%;
+    }
+    
+    nav a:hover {
+        color: #FDD647;
+    }
+    
+    #nav-toggle{
+        display: none;
+    }
+    
+    header + div{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner_principal.jpg);
+        height: 580px;
+        background-size: 105%;
+        background-position: top;
+        padding-top: 5em;
+    }
+
+    header + div .conteiner-fluid {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 3.5em;
+        box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+        -webkit-box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+        -moz-box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+    }
+    
+    header + div .conteiner-fluid p{
+        margin-top: 1.15em;
+        font-size: 1.27em;
+        box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+        -webkit-box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+        -moz-box-shadow: 5px 6px 20px 3px rgba(0,0,0,0.44);
+    }
+
+    header + div .conteiner-fluid p + div{
+        margin: 0 auto;
+        padding-top: 1.2em;
+    }
+
+    header + div .conteiner-fluid p + div a{
+        font-size: 1.07em;
+    }
+
+
+    h2{
+        text-align: left;
+        margin-left: 2em;
+    }
+
+
+    #programa {
+        justify-content: space-evenly;
+    }
+
+    #programa article {
+        width: 22%
+    }
+
+    #programa article:nth-of-type(5){
+        display: none;
+    }
+
+    #programa article:nth-of-type(1)
+    {
+        width:44%
+    }
+    
+    #programa article:nth-of-type(7){
+        width:22%   
+    }
+
+    #programa article:nth-of-type(7) div:nth-of-type(1) img:nth-of-type(1)
+    {
+        display:inline-block;
+    }
+
+    #programa article:nth-of-type(7) div:nth-of-type(1) img:nth-of-type(2)
+    {
+        display: none;
+    }
+    
+    #programa article:nth-of-type(10){
+        width: 66%;
+    }
+
+    #programa article:nth-of-type(10) div:nth-of-type(1) img:nth-of-type(1)
+    {
+        display:none;
+    }
+
+    #programa article:nth-of-type(10) div:nth-of-type(1) img:nth-of-type(2)
+    {
+        display: inline-block;
+    }
+    
+    #actividades figure:nth-of-type(1) img:nth-of-type(1) {
+        display:none;
+    }
+    
+    #actividades figure:nth-of-type(1) img:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    #actividades figure h3{
+        font-size:1.9em
+    }
+
+    #actividades figure p{
+        font-size:1.2em
+    }
+
+    #actividades figure:nth-of-type(1){
+        margin-top: 6em;
+    }
+    #actividades figure:nth-of-type(2){
+        margin-top: 6em;
+    }
+
+    #actividades figure img{
+        transition: filter, width 0.5s;
+    }
+
+    #actividades figure img:hover{
+        filter: saturate(55%) brightness(0.5) blur(2px);
+        width: 102%
+    }
+
+    #actividades figure:nth-of-type(1) img:hover{
+        width: 242%;
+    }
+
+    #donde iframe{
+        width: 35%;
+        height: 400px
+    }
+
+    
+    #donde article{
+        width: 55%;
+    }
+
+    footer a {
+        padding:0 1em;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    h1{
+        font-size: 4em;
+    }
+
+    header + div .conteiner-fluid p + div{
+        padding-top: 1.5em;
+    }
+
+    header + div .conteiner-fluid p{
+        margin-top: 1.3em;
+    }
+
+    #actividades figure h3{
+        top: 65%
+    }
+    
+    #actividades figure p{
+        
+        top: 75%;
+    }
+
+    #actividades figure:nth-of-type(1) h3{
+        top: 83%
+    }
+
+    #actividades figure:nth-of-type(1) p{
+        top: 88%;
+    }
+
+    form {
+
+        justify-content: flex-start;
+    }
+
+    .form-control {
+        width: 31%;
+        margin: 1.5em 1em 1.5em 0;
+    }
+    .form-select {
+        width: 31%;
+        margin: 1.5em 20em 1.5em 0;
+    }
+    #ingresar div {
+        width: 31%;
+        margin: 1.5em 60em 1.5em 0;
+    }
+
+    .btn-primary{
+        width: 31%;
+        margin: 1.5em 0
+    }
+
+    
+}
+
+@media screen and (min-width: 1440px){
+    h1{
+        font-size:4.5em;
+    }
+    
+    h2{
+        margin-left: 2.5em;
+    }
+    
+    header + div {
+        height: 677px;
+    }
+    
+    header + div .conteiner-fluid p{
+        margin-top: 2em;
+        font-size:1.37em;
+    }
+    
+    header + div .conteiner-fluid p + div{
+        padding-top: 4em;
+    }
+    
+    header + div .conteiner-fluid p + div a {
+        font-size: 1.27em;
+        
+    }
+    
+    #programa article {
+        width: 16%
+    }
+    
+    #programa article:nth-of-type(1)
+    {
+        width: 32%
+    }
+    
+    #programa article:nth-of-type(7){
+        width:16%   
+    }
+    
+    #programa article:nth-of-type(10){
+        width: 48%;
+    }
+    
+    #actividades {
+        height: 600px;
+    }
+    
+    #actividades figure:nth-of-type(1) img {
+        width: 150%;
+    }
+    
+    #actividades figure:nth-of-type(1) img:hover{
+        width: 152%;
+    }
+    
+    #actividades figure h3{
+        top: 52%
+    }
+    
+    #actividades figure:nth-of-type(1) h3{
+        top: 78%;
+    }
+    #actividades figure p{
+        top: 70%
+    }
+    
+    #actividades figure:nth-of-type(1) p{
+        top: 86%;
+    }
+    
+    #actividades figure:nth-of-type(1){
+        margin-top: 6.5em;
+    }
+    #actividades figure:nth-of-type(2){
+        margin-top: 6.5em;
+    }
+    
+    #donde article h3 {
+        margin-top: 1em;
+    }
+    
+    #donde p {
+        margin: 2em 0 4.5em;
+    }
+
+    #ingresar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+/*     form{
+        width: 65%; SLIDER
+    }
+
+    #ingresar article{
+        display:block;
+    } */
+    
+   /*  #ingresar article img {
+        width: 100%;
+    } */
+}
+
+@media screen and (min-width:1880px) {
+    #programa article:nth-of-type(7) h3 {
+        margin: 0.5em 0 0.5em 0;
+    }
+    #programa article:nth-of-type(7) figcaption {
+        margin: 0.25em 0 9.34em 0;
+    }
+    #programa article:nth-of-type(8) h3 {
+        margin: 0.5em 0 0.5em 0;
+    }
+    #programa article:nth-of-type(8) figcaption {
+        margin: 0.25em 0 9.34em 0;
+    }
+    #programa article:nth-of-type(9) h3 {
+        margin: 0.5em 0 0.5em 0;
+    }
+    #programa article:nth-of-type(9) figcaption {
+        margin: 0.25em 0 9.34em;
+    }
+    
+    #actividades figure h3{
+        font-size:2.1em
+    }
+    
+    #actividades figure p{
+        font-size:1.4em
+    }
+    
+    #actividades figure:nth-of-type(1){
+        margin-top: 7em;
+    }
+    #actividades figure:nth-of-type(2){
+        margin-top: 7em;
+    }
+    
+    #actividades {
+        height: 680px;
+    }
+    
+    #donde p {
+        margin: 2em 0 6em;
+    }
+}
